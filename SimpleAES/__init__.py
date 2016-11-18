@@ -8,11 +8,11 @@ from Crypto.Cipher import AES
 from .version import VERSION
 from .exceptions import EncryptionError, DecryptionError
 
-__title__ = 'SimpleAES'
+__title__ = 'SimpleAES3'
 __version__ = VERSION
-__author__ = 'Vincent Driessen'
+__author__ = 'Nilay Kulkarni'
 __license__ = 'BSD'
-__copyright__ = 'Copyright 2012 Vincent Driessen'
+__copyright__ = 'Copyright 2016 Nilay Kulkarni'
 
 
 def check_output(cmd, input_=None, *popenargs, **kwargs):
@@ -128,4 +128,4 @@ if __name__ == '__main__':
             ciphertext = aes.encrypt(input)
             text = aes.decrypt(ciphertext)
             assert text == input
-    print 'All OK'
+    print('All OK')

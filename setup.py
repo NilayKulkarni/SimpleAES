@@ -1,5 +1,5 @@
 """
-SimpleAES: Encryption and decryption for mere mortals.
+SimpleAES3: Encryption and decryption for mere mortals. Port for python3
 """
 import os
 from setuptools import setup
@@ -7,7 +7,7 @@ from setuptools import setup
 
 def get_version():
     basedir = os.path.dirname(__file__)
-    with open(os.path.join(basedir, 'SimpleAES/version.py')) as f:
+    with open(os.path.join(basedir, 'SimpleAES3/version.py')) as f:
         VERSION = None
         exec(f.read())
         return VERSION
@@ -15,15 +15,15 @@ def get_version():
 
 
 setup(
-    name='SimpleAES',
+    name='SimpleAES3',
     version=get_version(),
-    url='https://github.com/nvie/SimpleAES',
+    url='https://github.com/NilayKulkarni/SimpleAES',
     license='BSD',
-    author='Vincent Driessen',
-    author_email='me@nvie.com',
-    description='SimpleAES: encryption and decryption for mere mortals.',
+    author='Nilay Kulkarni',
+    author_email='typhoscientic@gmail.com',
+    description='SimpleAES: encryption and decryption for mere mortals. Port for python3',
     long_description=__doc__,
-    packages=['SimpleAES'],
+    packages=['SimpleAES3'],
     include_package_data=True,
     zip_safe=False,
     platforms='any',
